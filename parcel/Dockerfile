@@ -7,5 +7,5 @@ LABEL "com.github.actions.color"="white"
 
 RUN npm install -g parcel-bundler
 
-# ADD entrypoint.sh /entrypoint.sh
-# ENTRYPOINT ["sh", "/entrypoint.sh"]
+ADD entrypoint.sh /entrypoint.sh
+ENTRYPOINT ["sh", "/entrypoint.sh"]
