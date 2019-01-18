@@ -8,4 +8,4 @@ LABEL "com.github.actions.color"="purple"
 RUN npm install -g parcel-bundler
 
 ADD entrypoint.sh /entrypoint.sh
-ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT ["sh", "/entrypoint.sh"]
